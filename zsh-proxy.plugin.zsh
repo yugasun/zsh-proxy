@@ -1,4 +1,5 @@
 #!/bin/bash
+
 #  ______ _____ _    _   _____
 # |___  // ____| |  | | |  __ \
 #    / /| (___ | |__| | | |__| ) __ _____  ___   _
@@ -9,7 +10,6 @@
 #                                            |___/
 # -------------------------------------------------
 # A proxy plugin for zsh
-# Sukka (https://skk.moe)
 
 __read_proxy_config() {
 	__ZSHPROXY_STATUS=$(cat "${ZDOTDIR:-${HOME}}/.zsh-proxy/status")
@@ -297,13 +297,13 @@ config_proxy() {
 proxy() {
 	echo "1" >"${ZDOTDIR:-${HOME}}/.zsh-proxy/status"
 	__enable_proxy
-	__check_ip
+	# __check_ip
 }
 
 noproxy() {
 	echo "0" >"${ZDOTDIR:-${HOME}}/.zsh-proxy/status"
 	__disable_proxy
-	__check_ip
+	# __check_ip
 }
 
 myip() {

@@ -1,8 +1,5 @@
 # zsh-proxy
 
-[![Author](https://img.shields.io/badge/Author-Sukka-b68469.svg?style=flat-square)](https://skk.moe)
-[![License](https://img.shields.io/github/license/sukkaw/zsh-proxy.svg?style=flat-square)](./LICENSE)
-
 :nut_and_bolt: An [`oh-my-zsh`](https://ohmyz.sh/) plugin to configure proxy for some packages manager and software.
 
 ## Installation
@@ -12,7 +9,7 @@
 Firstly, clone this repository in `oh-my-zsh`'s plugins directory.
 
 ```bash
-git clone https://github.com/sukkaw/zsh-proxy.git ~/.oh-my-zsh/custom/plugins/zsh-proxy
+git clone https://github.com/yugasun/zsh-proxy.git ~/.oh-my-zsh/custom/plugins/zsh-proxy
 ```
 
 Secondly, activate the plugin in `~/.zshrc`. Enable it by adding `zsh-proxy` to the [plugins array](https://github.com/robbyrussell/oh-my-zsh/blob/master/templates/zshrc.zsh-template#L66).
@@ -27,7 +24,7 @@ plugins=(
 
 ### Antigen
 
-[Antigen](https://github.com/zsh-users/antigen) is a zsh plugin manager, and it support `oh-my-zsh` plugin as well. You only need to add `antigen bundle sukkaw/zsh-proxy` to your `.zshrc` with your other bundle commands if you are using Antigen. Antigen will handle cloning the plugin for you automatically the next time you start zsh. You can also add the plugin to a running zsh with `antigen bundle sukkaw/zsh-proxy` for testing before adding it to your `.zshrc`.
+[Antigen](https://github.com/zsh-users/antigen) is a zsh plugin manager, and it support `oh-my-zsh` plugin as well. You only need to add `antigen bundle yugasun/zsh-proxy` to your `.zshrc` with your other bundle commands if you are using Antigen. Antigen will handle cloning the plugin for you automatically the next time you start zsh. You can also add the plugin to a running zsh with `antigen bundle yugasun/zsh-proxy` for testing before adding it to your `.zshrc`.
 
 ----
 
@@ -86,7 +83,7 @@ Check procedure will use `curl` and the IP data come from `ipip.net`, `ip.cn` & 
 
 ## Uninstallation
 
-**If you install `zsh-proxy` with Antigen**, you need to remove `antigen bundle sukkaw/zsh-proxy` to disable the plugin.
+**If you install `zsh-proxy` with Antigen**, you need to remove `antigen bundle yugasun/zsh-proxy` to disable the plugin.
 **If you install `zsh-proxy` with oh-myzsh**, you need to remove `zsh-proxy` item from plugin array, then run `rm -rf ~/.oh-my-zsh/custom/plugins/zsh-proxy` to remove the plugin.
 
 And you can clean up files & folders created by `zsh-proxy` using following command:
@@ -121,10 +118,3 @@ $ rm -rf ~/.zsh-proxy
   - gem
 - `no_proxy` config
 - learn some from [arch wiki](https://wiki.archlinux.org/index.php/Proxy_server)
-
-## Author
-
-**zsh-proxy** © [Sukka](https://github.com/SukkaW), Released under the [MIT](https://github.com/SukkaW/zsh-proxy/blob/master/LICENSE) License.<br>
-Authored and maintained by Sukka with help from contributors ([list](https://github.com/SukkaW/zsh-proxy/graphs/contributors)).
-
-> [Personal Website](https://skk.moe) · [Blog](https://blog.skk.moe) · GitHub [@SukkaW](https://github.com/SukkaW) · Telegram Channel [@SukkaChannel](https://t.me/SukkaChannel) · Twitter [@isukkaw](https://twitter.com/isukkaw) · Keybase [@sukka](https://keybase.io/sukka)
